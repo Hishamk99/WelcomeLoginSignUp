@@ -16,9 +16,9 @@ class WelcomeLoginSignUp extends StatelessWidget {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-         "/" : (context) => WelcomePage(),
-         "/signUp" : (context) => SignUpPage(),
-         "/login" : (context) => LoginPage(),
+         "/" : (context) => const WelcomePage(),
+         WelcomePage.signUp : (context) => const SignUpPage(),
+         WelcomePage.signIn : (context) => const LoginPage(),
       },
       initialRoute: "/",
     );
