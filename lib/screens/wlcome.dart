@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:login_signup_project/widgets/custom_buttom.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -35,50 +36,20 @@ class WelcomePage extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
-                  ElevatedButton(
+                  CustomButton(
+                    signIn: 'Sign Up',
+                    color: const Color(0xff7240A6),
                     onPressed: () {
                       Navigator.pushNamed(context, signUp);
                     },
-                    style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all(Colors.purple[100]),
-                      padding: MaterialStateProperty.all(
-                          const EdgeInsets.symmetric(
-                              horizontal: 77, vertical: 13)),
-                      shape: MaterialStateProperty.all(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(27),
-                        ),
-                      ),
-                    ),
-                    child: const Text(
-                      'Sign Up',
-                      style: TextStyle(color: Colors.grey, fontSize: 16),
-                    ),
                   ),
-                  const SizedBox(
-                    height: 16,
-                  ),
-                  ElevatedButton(
+                  const SizedBox(height: 15,),
+                  CustomButton(
+                    signIn: 'Sign In',
+                    color: const Color(0xffE1D5EE),
                     onPressed: () {
                       Navigator.pushNamed(context, signIn);
                     },
-                    style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all(Colors.purple[100]),
-                      padding: MaterialStateProperty.all(
-                          const EdgeInsets.symmetric(
-                              horizontal: 77, vertical: 13)),
-                      shape: MaterialStateProperty.all(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(27),
-                        ),
-                      ),
-                    ),
-                    child: const Text(
-                      'Sign In',
-                      style: TextStyle(color: Colors.grey, fontSize: 16),
-                    ),
                   ),
                 ],
               ),
@@ -88,14 +59,14 @@ class WelcomePage extends StatelessWidget {
                 left: 0,
                 child: Image.asset(
                   'assets/images/main_top.png',
-                  width: 111,
+                  width: 70,
                 )),
             Positioned(
                 bottom: 0,
                 left: 0,
                 child: Image.asset(
                   'assets/images/main_bottom.png',
-                  width: 111,
+                  width: 70,
                 )),
           ]),
         ),
