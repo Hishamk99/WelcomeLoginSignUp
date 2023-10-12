@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:login_signup_project/widgets/custom_buttom.dart';
+import '../constant.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -38,15 +39,17 @@ class WelcomePage extends StatelessWidget {
                   ),
                   CustomButton(
                     signIn: 'Sign Up',
-                    color: const Color(0xff7240A6),
+                    color: kPrimary,
                     onPressed: () {
                       Navigator.pushNamed(context, signUp);
                     },
                   ),
-                  const SizedBox(height: 15,),
+                  const SizedBox(
+                    height: 15,
+                  ),
                   CustomButton(
                     signIn: 'Sign In',
-                    color: const Color(0xffE1D5EE),
+                    color: kPrimaryLightColor,
                     onPressed: () {
                       Navigator.pushNamed(context, signIn);
                     },
@@ -62,12 +65,13 @@ class WelcomePage extends StatelessWidget {
                   width: 70,
                 )),
             Positioned(
-                bottom: 0,
-                left: 0,
-                child: Image.asset(
-                  'assets/images/main_bottom.png',
-                  width: 70,
-                )),
+              bottom: 0,
+              left: 0,
+              child: Image.asset(
+                'assets/images/main_bottom.png',
+                width: 70,
+              ),
+            ),
           ]),
         ),
       ),
