@@ -14,7 +14,7 @@ class TextButtom extends StatelessWidget {
         Text(txt , style: const TextStyle(color: kPrimary),),
         GestureDetector(
           onTap: onTap,
-          child: Text(txt1 , style: const TextStyle(fontSize: 15 ,color: kPrimary),),
+          child: Text(txt1 , style: const TextStyle(fontSize: 15 ,color: kPrimary , fontWeight: FontWeight.bold),),
         ),
       ],
     );

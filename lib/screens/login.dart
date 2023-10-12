@@ -27,7 +27,7 @@ class LoginPage extends StatelessWidget {
                         const Padding(
                           padding: EdgeInsets.symmetric(vertical: 16),
                           child: Text(
-                            'Welcome to Edu',
+                            'LOGIN',
                             style: TextStyle(
                               fontSize: 28,
                               fontFamily: 'Courgette-Regular',
