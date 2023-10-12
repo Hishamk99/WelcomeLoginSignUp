@@ -48,6 +48,7 @@ class WelcomePage extends StatelessWidget {
                     height: 15,
                   ),
                   CustomButton(
+                    colorText: Colors.black,
                     signIn: 'Sign In',
                     color: kPrimaryLightColor,
                     onPressed: () {
